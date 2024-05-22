@@ -1,0 +1,60 @@
+@import "../variables.scss";
+
+.LkFarm {
+    background: $background-light;
+
+    &__name {
+        font-weight: bold;
+        font-size: 3em;
+    }
+
+    .edit-button {
+        color: $text-brandcolor;
+        background: $button-light-background;
+        padding: .8em 1.5em;
+        border-radius: 999px;
+
+        img {
+            height: 1.3em;
+        }
+    }
+
+    .exit {
+        .ui-secondary-button {
+            background: $button-light-background;
+            color: $text-brandcolor;
+        }
+    }
+
+    .modules {
+        .modules-heading {
+            color: #272848;
+            font-weight: 700;
+            font-size: 1.8em;
+        }
+
+        .modules-item {
+            background: $background-white;
+            border-radius: 10px;
+
+            p {
+                color: $inscription-color;
+            }
+
+            h3 {
+                font-weight: 500;
+                font-size: 1.125em;
+                color: #000000;
+            }
+
+            a {
+                color: $text-brandcolor;
+                background: $button-light-background;
+                padding: .8em 1.5em;
+                border-radius: 999px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

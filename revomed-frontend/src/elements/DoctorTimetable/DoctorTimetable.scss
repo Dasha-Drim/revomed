@@ -1,0 +1,107 @@
+@import "../../variables.scss";
+
+.DoctorTimetable {
+	background: $background-white;
+	min-height: 100%;
+	form {
+		min-height: 290px;
+	}
+	p {
+		color: #9B9BAB;
+	}
+	.DoctorTimetable__timezone {
+		width: 100%;
+		color: #9B9BAB;
+		position: absolute;
+		top: -2em;
+		width: 100%;
+	}
+	.timetable-carousel {
+		&__secondary {
+			position: relative;
+			.Carousel-slide {
+				user-select: none;
+				font-size: 1em;
+				line-height: 125%;
+				color: $c-inscription-color;
+				padding: .7em;
+				border: 1px solid transparent;
+				width: auto!important;
+				cursor: pointer;
+				&.Carousel-slide-active {
+					color: $text-brandcolor;
+					background: $decoration-dgray;
+					border-radius: 50px;
+				}
+			}
+			.Carousel-button-next {
+				position: absolute;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				width: 1em;
+				z-index: 2;
+				box-sizing: content-box;
+				padding: .5em;
+				background: $background-white;
+				cursor: pointer;
+				display: flex;
+				align-items: center;
+				align-content: center;
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+		&__primary {
+			.swiper-slide {
+				.day-timetable {
+					user-select: none;
+					label {
+						span {
+							display: inline-block;
+							padding: .6em 1.2em;
+							margin-bottom: 1em;
+							text-align: center;
+							border-radius: 50px;
+							border: 1px solid rgba(155, 155, 171, 0.3);
+							cursor: pointer;
+							color: rgba(39, 40, 72, 0.7);
+						}
+						input[type="radio"]:checked + span {
+							background: $checked-input;
+							color: $text-white;
+							border: 1px solid $checked-input;
+							display: inline-block;
+						}
+						input {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+	.timetable-booking {
+		position: relative;
+		&__info {
+			span {
+				display: block;
+				font-weight: 300;
+				color: $inscription-color;
+				opacity: .9;
+			}
+		}
+		button {
+			.crossed-out {
+				opacity: 0.35;
+				text-decoration: line-through;
+				position: relative;
+			}
+			&[disabled] {
+				opacity: 0.3;
+			}
+		}
+	}
+}

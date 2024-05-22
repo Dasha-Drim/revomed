@@ -1,0 +1,89 @@
+@import "../../../variables.scss";
+
+.UIClinicTimetable {
+	background: $background-white;
+	border-radius: 10px;
+	p {
+		color: $inscription-color;
+	}
+	.prompt {
+		width: 20px;
+	    height: 20px;
+	    background: #E9EAFE;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    border-radius: 99px;
+	    cursor: pointer;
+	    position: relative;
+				.prompt__info {
+					background: $background-white;
+					width: 20.875rem;
+					top: 2rem;
+					box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+					margin-left: auto;
+					margin-right: auto;
+					border-radius: 10px;
+					z-index: 2;
+					p {
+						margin-bottom: 0;
+					}
+				}
+	}
+	&__carousel-control {
+		position: relative;
+		z-index: 2;
+		.control-buttons {
+			position: absolute;
+			top: 0;
+			button {
+				background: transparent;
+				border: none;
+				outline: none;
+				&.swiper-button-disabled {
+					svg {
+						fill: rgba(39, 40, 72, .4);
+					}
+				}
+				svg {
+					fill: $background-dark;
+				}
+			}
+		}
+	}
+	&__carousel {
+		width: 100%;
+		.swiper-slide {
+			@media (min-width: 992px) {
+				width: 14.28% !important;
+			}
+		}
+	}
+	&-day {
+		
+		&__heading {
+			font-weight: 500;
+			color: $heading-black;
+		}
+		&__content {
+			.time-item {
+				background: $background-white;
+				color: $inscription-color;
+				font-size: 1em;
+				outline: 0;
+				padding: .7em 1.2em .7em 1.2em;
+				width: 100%;
+				border-radius: 50px;
+				border: 1px solid rgba(155, 155, 171, 0.3);
+			}
+		}
+	}
+	button.send-adress {
+		width: 100%;
+		margin: 0 10px;
+		@media(min-width: 992px) {
+			width: auto;
+			margin-left: 2.5em;
+		}
+	}
+}

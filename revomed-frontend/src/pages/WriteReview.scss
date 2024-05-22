@@ -1,0 +1,33 @@
+@import "../variables.scss";
+
+.WriteReview {
+	background: $background-light;
+	.review-form {
+		background: $background-white;
+		border-radius: 10px;
+		&__heading {
+			font-weight: bold;
+			font-size: 2.25em;
+			color: $heading-black;
+		}
+		&__about-item {
+			font-size: 1em;
+			color: $text-black;
+		}
+		.add-mark {
+			background: $decoration-dgray;
+			border-radius: 5px;
+			img {
+				cursor: pointer;
+				height: 2em;
+				width: 2em;
+			}
+			.question-label {
+				color: $text-brandcolor;
+			}
+		}
+		.question-label {
+			color: $label-color;
+		}
+	}
+}

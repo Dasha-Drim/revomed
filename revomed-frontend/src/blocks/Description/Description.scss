@@ -1,0 +1,21 @@
+@import "../../variables.scss";
+
+.Description {
+	box-shadow: 0px 20px 50px rgba(39,40,72,.03);
+	background: $background-white;
+	border-radius: 10px;
+	h2 {
+		color: $heading-black;
+		font-size: 1.5em;
+		font-weight: 500;
+		padding-bottom: .5em;
+	}
+	p {
+		white-space: pre-wrap;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 1em;
+		line-height: 169%;
+		color: $text-black;
+	}
+}

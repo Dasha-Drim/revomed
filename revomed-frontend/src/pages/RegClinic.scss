@@ -1,0 +1,15 @@
+@import "../variables.scss";
+
+.RegClinic {
+	background: $background-light;
+	.registration-success {
+		img {
+			height: 3.6em;
+		}
+		p {
+			font-size: 1.5em;
+			line-height: 154%;
+			color: $inscription-color;
+		}
+	}
+}

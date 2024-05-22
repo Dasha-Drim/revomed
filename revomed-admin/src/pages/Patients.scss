@@ -1,0 +1,41 @@
+.Patients {
+	min-height: 100%;
+	background: #EFF0F8;
+	padding-bottom: 3em;
+	@media (min-width: 768px) {
+		margin-left: 100px;
+	}
+	h1 {
+		font-weight: bold;
+		font-size: 1.75em;
+		color: #272848;
+	}
+	.Patients__count {
+		background: #FFFFFF;
+		border-radius: 10px;
+		h2 {
+			font-weight: 500;
+			font-size: 1.125em;
+			color: #272848;
+		}
+		span {
+			font-weight: 300;
+			font-size: .875em;
+			color: #272848;
+		}
+	}
+	.Patients__container {
+		background: #FFFFFF;
+		border-radius: 10px;
+		h3 {
+			font-weight: 500;
+			font-size: .875em;
+			color: #C2C3DA;
+		}
+		span {
+			font-weight: 300;
+			font-size: .875em;
+			color: #272848
+		}
+	}
+}

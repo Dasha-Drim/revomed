@@ -1,0 +1,61 @@
+@import "../../variables.scss";
+
+.FileUploadInput {
+	&__start-attach {
+		cursor: pointer;
+		margin: 0;
+		position: relative;
+		background: $white;
+		border-radius: 10px;
+		color: $label-color;
+		overflow: hidden;
+		white-space: nowrap;
+		border: 1px solid rgba(155, 155, 171, 0.1);
+		box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.03);
+		input {
+			display: none;
+		}
+		img {
+			position: absolute;
+			right: 0;
+			background: white;
+		}
+		&.error {
+			border: 1px solid red;
+		}
+	}
+	.error-text {
+		p {
+			color: red;
+    font-weight: 500;
+		}
+	}
+	&__uploaded-item {
+		width: 100%;
+		background: $background-white;
+		border-radius: 10px;
+		color: $label-color;
+		position: relative;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		border: 1px solid rgba(155, 155, 171, 0.1);
+		box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.03);
+		button {
+			padding: 0;
+			margin: 0;
+			border: 0;
+			outline: 0;
+			cursor: pointer;
+			img {
+				position: absolute;
+				right: 0;
+				top: 0;
+				padding: .2em;
+				background-color: $c-backlighting-blue;
+				border-top-right-radius: 10px;
+			}
+		}
+		
+	}
+}

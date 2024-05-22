@@ -1,0 +1,27 @@
+@import "../../variables.scss";
+
+.BigLoadingState {
+	.BigLoadingState-loader {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 2px solid $border-gray;
+      border-top-color: transparent;
+      box-sizing: border-box;
+      animation: editor-loader-spin 800ms infinite linear;
+      will-change: transform;
+	}
+	span {
+		color: $inscription-color;
+	}
+}
+
+@keyframes editor-loader-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

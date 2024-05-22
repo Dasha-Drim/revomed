@@ -1,0 +1,106 @@
+@import "../variables.scss";
+
+.LkUser {
+    background: $background-light;
+
+    &__name {
+        font-weight: bold;
+        font-size: 3em;
+    }
+
+    .banner_lk {
+        background: $white;
+        border-radius: 10px;
+        padding: 6em 2em;
+
+        h2 {
+            font-weight: 700;
+            font-size: 1.5em;
+            color: #272848;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 1em;
+            line-height: 169%;
+            color: #272848;
+        }
+
+        .m-btn {
+            padding: 0.875em 3em;
+        }
+
+        .cross {
+            top: 1em;
+            right: 1em;
+            background: none;
+            outline: none;
+        }
+    }
+
+    &__switcher {
+        border: 1px solid $link-color;
+        filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.03));
+        border-radius: 10px;
+
+        button {
+            background: transparent;
+            color: $link-color;
+            padding: 1em 0;
+            width: 12.625em;
+
+            &.active {
+                background: $link-color;
+                box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.03);
+                color: $white;
+            }
+
+            &:first-child {
+                border-radius: 10px 0px 0px 10px;
+            }
+
+            &:last-child {
+                border-radius: 0px 10px 10px 0px;
+            }
+        }
+    }
+
+    .edit-button {
+        color: $text-brandcolor;
+        background: $button-light-background;
+        padding: .8em 1.5em;
+        border-radius: 999px;
+
+        img {
+            height: 1.3em;
+        }
+    }
+
+    .exit {
+        .ui-secondary-button {
+            background: $button-light-background;
+            color: $text-brandcolor;
+        }
+    }
+
+    .banner {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08)), linear-gradient(86.93deg, #CA5D42 -5.51%, #F39E68 67.88%);
+        border-radius: 10px;
+
+        h1 {
+            font-weight: 700;
+            font-size: 2.25em;
+            color: $heading-white;
+            margin-bottom: 0.75em;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 1em;
+            line-height: 188%;
+            color: $text-white;
+            opacity: 0.7;
+            margin-bottom: 0;
+        }
+    }
+}

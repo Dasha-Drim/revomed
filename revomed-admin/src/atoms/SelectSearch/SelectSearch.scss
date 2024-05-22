@@ -1,0 +1,38 @@
+.select__control  {
+	border-color: rgba(39, 40, 72, 0.2);
+	box-shadow: none;
+	border-radius: 5px;
+	&:focus {
+		border-color: rgba(39, 40, 72, 0.2);
+		box-shadow: none;
+	}
+	&:hover {
+		border-color: rgba(39, 40, 72, 0.2);
+		box-shadow: none;
+	}
+	.select__indicators  {
+		display: none;
+	}
+	.select__value-container {
+		border-color: rgba(39, 40, 72, 0.2);
+		padding: .88em 1em;
+		color: #272848;
+		font-size: .875em;
+	}
+
+}
+.select__menu-list {
+	background: #FFFFFF;
+	.select__option {
+		color: #272848;
+			font-size: .875em;
+		&:hover {
+			background: rgba(39, 40, 72, 0.2);
+		}
+		&--is-selected {
+			background: rgba(39, 40, 72, 0.2);
+			color: #272848;
+			font-size: .875em;
+		}
+	}
+}

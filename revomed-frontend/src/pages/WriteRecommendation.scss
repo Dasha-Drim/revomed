@@ -1,0 +1,21 @@
+@import "../variables.scss";
+
+.WriteRecommendation {
+	background: $background-light;
+	.recommendation-form {
+		background: $background-white;
+		border-radius: 10px;
+		&__heading {
+			font-weight: bold;
+			font-size: 2.25em;
+			color: $heading-black;
+		}
+		&__about-item {
+			font-size: 1em;
+			color: $text-black;
+		}
+		.question-label {
+			color: $label-color;
+		}
+	}
+}

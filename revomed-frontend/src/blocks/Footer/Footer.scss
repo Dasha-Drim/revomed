@@ -1,0 +1,93 @@
+@import "../../variables.scss";
+
+.Footer {
+	background: linear-gradient(110.67deg, #3A2748 12.35%, #3B3C72 76.14%);
+	&__about-company {
+		width: 100%;
+		@media (min-width: 768px) {
+			width: auto;
+		}
+		p {
+			color: $inscription-color;
+			opacity: 0.5;
+			font-size: 0.9em;
+			font-weight: 300;
+			margin-bottom: 0em;
+		}
+	}
+	&__agreement-link {
+		color: $inscription-color;
+		opacity: 0.5;
+		font-size: 0.9em;
+		font-weight: 300;
+		text-decoration: underline;
+		&:hover {
+			color: $text-white;
+			text-decoration: underline;
+		}
+	}
+	&__studio-link {
+		color: $inscription-color;
+		opacity: 0.5;
+		font-size: 0.875em;
+		font-weight: bold;
+		&:hover {
+			opacity: 1;
+			color: $inscription-color;
+		}
+	}
+	&__nav {
+		width: 100%;
+		@media (min-width: 768px) {
+			width: auto;
+		}
+		span {
+			display: block;
+			color: $text-white;
+			font-size: 1.125em;
+		}
+		a {
+			display: block;
+			color: $inscription-color;
+			font-size: 1.125em;
+			margin-bottom: .9em;
+			font-weight: 300;
+			&:hover {
+				color: $text-white;
+			}
+		}
+	}
+	.warning {
+		color: $white;
+			opacity: 0.2;
+			font-size: 1em;
+			font-weight: 400;
+			margin-bottom: 0em;
+			text-transform: uppercase;
+	}
+}
+
+
+.menutabs {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: $background-white;
+	z-index: 99;
+	&-item {
+		svg {
+			width: 1.8em;
+			height: 1.8em;
+		}
+		&__name {
+			color: #C2C3DA;
+			font-weight: 500;
+			font-size: 1em;
+		}
+		&.active {
+			.menutabs-item__name {
+				color: $link-color;
+			}
+		}
+	}
+}

@@ -1,0 +1,49 @@
+@import "../../variables.scss";
+
+.ReviewsSlider {
+	box-shadow: 0px 20px 50px rgba(39,40,72,.03);
+	background: $background-white;
+	border-radius: 10px;
+	&__header {
+		h2 {
+			color: $heading-black;
+			font-size: 1.5em;
+			font-weight: 500;
+		}
+	}
+	&__control {
+		button {
+			background: $button-light-background;
+			height: 3em;
+			width: 3em;
+			border-radius: 10px;
+		}
+	}
+	&__carousel {
+		.carousel-item {
+			&__author {
+				color: $heading-black;
+				font-size: 1.5em;
+				font-weight: bold;
+			}
+			&__rating {
+				img {
+					width: 1.1em;
+				}
+			}
+			&__text {
+				font-size: 1.25em;
+				line-height: 165%;
+				font-weight: 400;
+				color: $text-black;
+			}
+			&__date {
+				color: $inscription-color;
+				font-weight: 300;
+			}
+		}
+	}
+	span {
+		font-weight: 500;
+	}
+}

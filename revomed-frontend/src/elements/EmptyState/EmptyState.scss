@@ -1,0 +1,13 @@
+@import "../../variables.scss";
+
+.EmptyState {
+	background: $background-white;
+	border-radius: 10px;
+	span {
+		color: $inscription-color;
+		font-weight: 500;
+	}
+	img {
+		height: 6em;
+	}
+}

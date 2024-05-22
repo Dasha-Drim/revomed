@@ -1,0 +1,266 @@
+@import "../variables.scss";
+
+.Doctor {
+	background: $background-light;
+	&__avatar {
+		width: 11em;
+		height: 16em;
+		border-radius: 5px;
+	}
+	&__name {
+		font-weight: 600;
+		font-size: 2.25em;
+		color: $heading-black;
+	}
+	&__category {
+		background: $background-white;
+		border-radius: 5px;
+	}
+	&__category, &__experience, &__academic-degree {
+		white-space: nowrap;
+	}
+	&__add-to-favourites {
+		background: transparent;
+		@media (hover: hover) {
+			&:hover {
+				svg {
+					fill: $background-brandcolor;
+				}
+			}
+		}
+		&.added {
+			svg {
+				fill: $background-brandcolor;
+			}
+		}
+		svg {
+			fill: transparent;
+		}
+	}
+	.banner {
+		background: #E2E3FA;
+		color: $inscription-color;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.indicators {
+		&__info {
+			span {
+				display: block;
+				font-weight: 300;
+				color: $inscription-color;
+				opacity: .9;
+			}
+		}
+	}
+	&__directions {
+		&-item {
+			padding: .75em 1em;
+			background: $background-white;
+			box-shadow: 0px 10px 30px rgba(0,0,0,.03);
+			border-radius: 5px;
+			color: $inscription-color;
+		}
+	}
+	.consultation-sale {
+		background: $background-brandcolor;
+		color: $text-white;
+		border-radius: 10px 10px 0 0;
+	}
+	.get-consultation {
+		background: $white;
+		border-radius: 0 0 10px 10px;
+		&.no-sale {
+			border-radius: 10px;
+		}
+		&__heading {
+			font-size: 1.3em;
+			font-weight: 500;
+			color: $heading-brandcolor;
+			.oldPrice {
+				position: relative;
+				text-decoration: line-through; 
+				color: $inscription-color;
+				font-size: .8em;
+				bottom: .4em;
+
+			}
+		}
+		&__subheading {
+			font-weight: 500;
+			font-size: 1em;
+			color: $text-black;
+		}
+	}
+	.type {
+		span {
+			color: $inscription-color;
+			&.price {
+				font-weight: bold;
+				font-size: 1.125em;
+				color: $inscription-color;
+			}
+			&.crossed-out {
+				font-weight: bold;
+				opacity: 0.35;
+				text-decoration: line-through;
+				position: relative;
+			}
+		}
+		.prompt {
+			z-index: 10;
+			position: absolute;
+			top: 1em;
+			right: 1em;
+			width: 20px;
+			height: 20px;
+			border: 1px solid $inscription-color;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 99px;
+			cursor: pointer;
+			&:hover {
+					background: rgba(0, 0, 0, .05);
+				}
+				&.active {
+					border: 1px solid #6D71F9;
+				}
+			.prompt__info {
+				background: $background-white;
+				width: 20.875rem;
+				top: 2rem;
+				right: -1em;
+				box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+				margin-left: auto;
+				margin-right: auto;
+				border-radius: 10px;
+				@media(min-width: 576px) {
+					right: auto;
+				}
+				
+				p {
+					margin-bottom: 0;
+				}
+			}
+		}
+		.button {
+			background: #fff;
+			width: 12.5em;
+			border-radius: 10px;
+			border: 1px solid #E9EAFE;
+			cursor: pointer;
+			z-index: 2;
+			padding: 1em;
+			&:hover:after {
+				content: '';
+				position: absolute;
+				border-radius: 10px;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: rgba(0, 0, 0, .05);
+				z-index: 2;
+			}
+			.sale {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				display: flex;
+				justify-content: center;
+				background: #E9EAFE;
+				border-radius: 0 0 10px 10px;
+				width: 100%;
+				//width: 12.5em;
+				padding: .1em;
+				span {
+					font-weight: 500;
+					font-size: .875em;
+				}
+			}
+			&.isSale {
+				padding: 1em 1em 2.5em 1em;
+			}
+			&.active {
+				background: #E9EAFE;
+				span {
+					color: #6D71F9;
+					&.clinicName {
+						color: #272848;
+					}
+					&.adress {
+						color: $inscription-color;
+					}
+				}
+				.sale {
+					background: rgba(109, 113, 249, 0.1);
+				}
+				.prompt {
+					border: 1px solid #6D71F9;
+				}
+			}
+			
+		}
+	}
+	.clinicName {
+		font-size: 1.125em;
+		color: #272848;
+	}
+	.adress {
+		font-weight: 300;
+		font-size: 1em;
+		color: $inscription-color;
+	}
+	.cumulative-sale {
+						padding: 0.1em 1em 0.1em 2.5em;
+						background: #E9EAFE;
+						border-radius: 50px;
+						span {
+							font-weight: 700;
+							font-size: .75em;
+							text-transform: uppercase;
+							color: #6D71F9;
+							.procent-img {
+								position: absolute;
+								justify-content: center;
+								align-items: center;
+								left: 0;
+								height: 100%;
+								top: 0;
+								display: flex;
+								padding: .25em;
+								background: #6D71F9;
+								border-radius: 50px;
+								@media(min-width: 1600px) {
+									padding: .25em;
+								}
+								img {
+									height: 1.75em;
+								}
+							}
+						}
+					}
+}
+.CumulativeSale-modal {
+	.checked {
+		width: 3.125em;
+		height: 3.125em;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		background: #DFF8E5;
+		border-radius: 10px;
+		margin-right: 1.5em;
+	}
+	p {
+		font-weight: 400;
+		font-size: 1.125em;
+		color: #9B9BAB;
+		width: 87%;
+		margin-bottom: 0;
+	}
+}

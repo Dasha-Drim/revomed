@@ -1,0 +1,36 @@
+.Navigation {
+	background: #FFFFFF;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	z-index: 222;
+	@media (min-width: 768px) {
+		height: 100%;
+		width: 100px;
+	}
+	button.exit {
+		font-size: .875em;
+		color: #FF6B6B;
+		background: transparent;
+		border: 0;
+	}
+	.nav {
+		a {
+			margin-bottom: 0;
+			margin-right: 2em;
+			cursor: pointer;
+			@media (min-width: 768px) {
+				margin-bottom: 1em;
+				margin-right: 0;
+			}
+			@media (min-height: 450px) and (min-width: 768px) {
+				margin-bottom: 2.5em;
+				margin-right: 0;
+			}
+			&:last-child {
+				margin-bottom: 0;
+				margin-right: 0;
+			}
+		}
+	}
+}

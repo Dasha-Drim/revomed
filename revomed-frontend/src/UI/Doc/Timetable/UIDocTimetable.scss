@@ -1,0 +1,54 @@
+@import "../../../variables.scss";
+
+.UIDocTimetable {
+	background: $background-white;
+	border-radius: 10px;
+	&__carousel-control {
+		position: relative;
+		z-index: 2;
+		.control-buttons {
+			position: absolute;
+			top: 0;
+			button {
+				background: transparent;
+				border: none;
+				outline: none;
+				&.swiper-button-disabled {
+					svg {
+						fill: rgba(39, 40, 72, .4);
+					}
+				}
+				svg {
+					fill: $background-dark;
+				}
+			}
+		}
+	}
+	&__carousel {
+		width: 100%;
+		.swiper-slide {
+			@media (min-width: 992px) {
+				width: 14.28% !important;
+			}
+		}
+	}
+	&-day {
+		
+		&__heading {
+			font-weight: 500;
+			color: $text-black;
+		}
+		&__content {
+			.time-item {
+				background: $background-white;
+				color: $inscription-color;
+				font-size: 1em;
+				outline: 0;
+				padding: .7em 1.2em .7em 1.2em;
+				width: 100%;
+				border-radius: 50px;
+				border: 1px solid rgba(155, 155, 171, 0.3);
+			}
+		}
+	}
+}

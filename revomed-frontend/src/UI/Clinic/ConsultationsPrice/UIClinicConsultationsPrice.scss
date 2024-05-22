@@ -1,0 +1,44 @@
+@import "../../../variables.scss";
+
+.UIClinicConsultationsPrice {
+	&__content {
+		background: $background-white;
+		border-radius: 10px;
+	}
+	.UIClinicConsultationsPrice_offline-btns {
+		background: $background-white;
+		border-radius: 10px;
+		border: 1px solid #E9EAFE;
+		span {
+			font-size: 1em;
+			color: #9B9BAB;
+		}
+		.offline-btns__container {
+			display: flex;
+			button {
+				height: 3.125em;
+				width: 50%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.03);
+				border: 1px solid #E9EAFE;
+				border-radius: 10px;
+				background: transparent;
+				font-size: 1em;
+				color: #9B9BAB;
+				&.active {
+					background: #E9EAFE;
+					color: #6D71F9;
+				}
+				&:first-child {
+					border-radius: 10px 0px 0px 10px;
+				}
+				&:last-child {
+					border-radius: 0px 10px 10px 0px;
+				}
+			}
+
+		}
+	}
+}

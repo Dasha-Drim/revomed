@@ -1,0 +1,83 @@
+@import "../../variables.scss";
+
+.MultiselectTextInput {
+	.MultiSelect {
+		display: block;
+		position: relative;
+
+		&__label {
+			position: absolute;
+			display: block;
+			color: $label-color;
+			cursor: text;
+			font-size: .785em;
+			line-height: 1em;
+			transition: all 0.3s;
+			padding-left: 1.2em;
+			white-space: nowrap;
+			top: 1.2em;
+			max-width: 100%;
+		}
+		
+		.CreatableSelect {
+			background: $background-white;
+			border-radius: 10px;
+			color: $label-color;
+			font-size: 1em;
+			outline: 0;
+			padding: 2em 1em 1em;
+			margin-top: 0;
+			transition: all 0.3s;
+			width: 100%;
+			border: 1px solid rgba(155, 155, 171, 0.3);
+			&__indicator {
+				padding: 0;
+				.css-tj5bde-Svg {
+					height: 19px;
+					width: 19px;
+				}
+			}
+			&__placeholder {
+				white-space: nowrap;
+			}
+			&__control {
+				min-height: auto;
+				border: 0;
+				box-shadow: none;
+				.CreatableSelect__value-container {
+					padding: 0;
+					.css-b8ldur-Input {
+						padding: 0;
+						margin: 0;
+					}
+					.CreatableSelect__multi-value {
+						margin: .3em .3em .3em 0;
+						.CreatableSelect__multi-value__label {
+							padding: .3em 1em;
+						}
+					}
+				}
+				&:valid+span {
+					font-size: .785em;
+					transform: translate(0, -4.6em)
+				}
+				&:disabled {
+					opacity: .5;
+					cursor: not-allowed;
+				}
+				&:disabled+span {
+					cursor: not-allowed;
+					opacity: .5;
+					font-size: .785em;
+					transform: translate(0, -4.6em)
+				}
+				&.error {
+					border: 1px solid red;
+				}
+			}
+		}
+	}
+	&__info {
+		color: $inscription-color;
+	}
+}

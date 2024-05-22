@@ -1,0 +1,6 @@
+let CatalogIcon = (props) => {
+	return (
+
+	);
+}
+export default CatalogIcon;

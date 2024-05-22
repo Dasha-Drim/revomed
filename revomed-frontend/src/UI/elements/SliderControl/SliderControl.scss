@@ -1,0 +1,10 @@
+@import "../../../variables.scss";
+
+.SliderControl {
+	button {
+			background: $button-light-background;
+			height: 3em;
+			width: 3em;
+			border-radius: 10px;
+		}
+}

@@ -1,0 +1,28 @@
+@import "../../variables.scss";
+
+.Checkbox {
+			position: relative;
+			cursor: pointer;
+			& input[type="checkbox"] {
+				display: none;
+				&:checked+span {
+					color: $white;
+					border: 1px solid transparent;
+					background: $checked-input;
+					display: inline-block;
+				}
+				&+span {
+					display: inline-block;
+					color: $label-color;
+					font-weight: normal;
+					font-size: 1em;
+					padding: .8em 2em;
+					border: 1px solid rgba(155,155,171,0.3);
+					border-radius: 50px;
+					box-shadow: 0px 0px 30px rgba(0,0,0,0.03);
+					margin: .7em .6em;
+					user-select: none;
+					white-space: nowrap;
+				}
+			}
+		}

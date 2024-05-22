@@ -1,0 +1,13 @@
+.Carousel {
+	position: relative;
+	overflow: hidden;
+	user-select: none;
+	&-inner {
+		width: 100%;
+		display: flex;
+		position: relative;
+	}
+	&-slide {
+		flex-shrink: 0;
+	}
+}

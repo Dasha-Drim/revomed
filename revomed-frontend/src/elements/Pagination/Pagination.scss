@@ -1,0 +1,30 @@
+@import "../../variables.scss";
+
+.Pagination {
+	button {
+		background: $background-white;
+		color: $link-color;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		width: 3.2em;
+		height: 3.2em;
+		border-radius: 999px;
+		&:hover {
+			transition-duration: .5s;
+			background: $background-brandcolor;
+			color: $text-white;
+		}
+		&.active {
+			background: $background-dark;
+			color: $text-white;
+			&:hover {
+				color: $text-white;
+			}
+		}
+		&.next {
+			width: auto;
+		}
+	}
+}

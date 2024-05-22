@@ -1,0 +1,50 @@
+.Settings {
+    min-height: 100%;
+    background: #EFF0F8;
+    padding-bottom: 3em;
+
+    @media (min-width: 768px) {
+        margin-left: 100px;
+    }
+
+    h1 {
+        font-weight: bold;
+        font-size: 1.75em;
+        color: #272848;
+    }
+
+    .botton-holer {
+        border: 1px solid #6D71F9;
+        border-radius: 999px;
+
+        button {
+            background: none;
+            border: none;
+            color: #6D71F9;
+            font-weight: 500;
+            font-size: .75em;
+
+            &.active {
+                background: #6D71F9;
+                border-radius: 999px;
+
+                color: #FFFFFF;
+            }
+            &:focus {
+            	outline: none;
+            }
+        }
+    }
+
+    form {
+        background: #fff;
+        border-radius: 10px;
+        padding-left: 2em;
+        padding-right: 2em;
+
+        @media (min-width: 1200px) {
+            padding-left: 8em;
+            padding-right: 8em;
+        }
+    }
+}

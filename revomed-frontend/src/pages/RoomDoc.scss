@@ -1,0 +1,16 @@
+@import "../variables.scss";
+
+.RoomDoc {
+	background: $background-light;
+	.RoomDoc__files {
+		background: $background-white;
+		border-radius: 10px;
+		p {
+			color: $inscription-color;
+		}
+	}
+	&__client-status {
+		background: $background-white;
+		border-radius: 10px;
+	}
+}

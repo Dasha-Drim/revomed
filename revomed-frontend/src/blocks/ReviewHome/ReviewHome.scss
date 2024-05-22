@@ -1,0 +1,45 @@
+@import "../../variables.scss";
+
+.ReviewHome {
+				background: $white;
+				border-radius: 10px;
+				display: flex;
+				flex-direction: column;
+				&__author {
+					color: $heading-black;
+					font-size: 1.375em;
+					font-weight: bold;
+				}
+				&__category {
+					color: $inscription-color;
+					font-weight: 300;
+				}
+				&__avatar {
+					height: 4.75em;				
+					width: 3.75em;
+					border-radius: 10px;			
+				}
+				&__rating {
+					img {
+						width: 1.1em;
+					}
+				}
+				&__button {
+					background: none;
+					outline: none;
+					border: none;
+					color: $medium-slate-blue;
+					font-weight: 500;
+				}
+				&__text {
+					font-size: 1.125em;
+					line-height: 165%;
+					font-weight: 400;
+					color: $text-black;
+					flex: 1;
+				}
+				&__date {
+					color: $inscription-color;
+					font-weight: 300;
+				}
+			}

@@ -1,0 +1,55 @@
+.InputPlusCategory {
+	
+	input {
+		background-color: #fff;
+		border: 1px solid transparent;
+		border-radius: 5px;
+		color: #272848;
+		font-size: .875em;
+		outline: 0;
+		padding: 1.5em 1em .75em;
+		margin-top: 0;
+		transition: all 0.3s;
+		border: 1px solid rgba(39, 40, 72, 0.2);
+		width: 100%;
+		&:focus {
+			max-width: 100%;
+		}
+		&:focus+span {
+			color: rgba(39, 40, 72, 0.6);
+			padding-left: 1.8em;
+			font-size: .625em;
+			transform: translateY(-4.3em);
+		}
+		&:valid+span {
+			color: rgba(39, 40, 72, 0.6);
+			font-size: .625em;
+			padding-left: 1.8em;
+			transform: translateY(-4.3em);
+		}
+		&.error {
+			border: 1px solid red;
+		}
+	}
+	
+	span {
+		position: absolute;
+		display: block;
+		color:  #272848;
+		cursor: text;
+		font-size: 1em;
+		left: 1em;
+		line-height: 1em;
+		transform: translateY(-2.25em);
+		transition: all 0.3s;
+		padding-left: 1.2em;
+	}
+	.plus .cross {
+		position: absolute;
+		right: 1.5em;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		cursor: pointer;
+	}
+}

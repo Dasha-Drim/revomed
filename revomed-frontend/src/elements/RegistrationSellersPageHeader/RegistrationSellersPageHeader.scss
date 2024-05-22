@@ -1,0 +1,65 @@
+@import "../../variables.scss";
+
+.RegistrationSellersPageHeader {
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08)), linear-gradient(86.93deg, #CA5D42 -5.51%, #F39E68 67.88%);
+	h2 {
+		font-size: 3em;
+		font-weight: bold;
+		color: $text-white;
+	}
+	.m-btn {
+		font-size: 1em;
+		font-weight: normal;
+	}
+	span {
+		font-size: 1em;
+		font-weight: normal;
+		color: $text-white;
+	}
+	.user-type-choice {
+		a {
+			padding: .8em 2.5em;
+			text-align: center;
+			border-radius: 50px;
+			border: 1px solid rgba(255, 255, 255, 0.3);
+			cursor: pointer;
+			color: $text-white;
+			&.active {
+				background: $checked-input;
+				border: 1px solid $checked-input;
+			}
+		}
+		[type="radio"]:checked, [type="radio"]:not(:checked) {
+			width: 0;
+			height: 0;
+			visibility: hidden;
+		}
+		&__input {
+			&+label {
+				display: inline-block;
+				padding: .8em 2.5em;
+				text-align: center;
+				border-radius: 50px;
+				border: 1px solid rgba(255,255,255,0.3);
+				cursor: pointer;
+				color: $text-white;
+			}
+			&:checked+label {
+				background: $checked-input;
+				color: $text-white;
+				border: none;
+			}
+		}
+	}
+	&__image {
+		margin-top: -4em;
+		margin-bottom: -4em;
+		position: relative;
+		img {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			height: 100%;
+		}
+	}
+}

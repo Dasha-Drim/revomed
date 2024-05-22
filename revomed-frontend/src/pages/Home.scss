@@ -1,0 +1,556 @@
+@import "../variables.scss";
+
+/*html, body {
+    position: relative !important;
+}*/
+
+.Home {
+	.search-section {
+		background: $medium-slate-blue;
+		&.active {
+			height: 100vh;
+				position: absolute;
+				top: 0;
+				z-index: 300;
+				width: 100%;
+			@media(min-width: 576px) {
+				position: relative;
+				height: auto;
+				width: auto;
+			}
+			
+			.search-section__heading {
+				display: none;
+				@media(min-width: 576px) {
+				display: block;
+				}
+			}
+		}
+		&__heading {
+			font-size: 2.75em;
+			font-weight: bold;
+			color: $white;
+			@media (min-width: 576px) {
+				font-size: 4em;
+			}
+		}
+		&__signature {
+			position: absolute;
+			right: -17%;
+			top: -150%;
+		}
+	}
+	.fast-access-section {
+		h2 {
+			color: $heading-black;
+			font-weight: bold;
+			font-size: 2.5em;
+		}
+		&__button-holder {
+			border-radius: 10px;
+			background: $button-light-background;
+			&:hover {
+				background: #CFD1FF;
+			}
+			span {
+				font-weight: 500;
+				color: $medium-slate-blue;
+				font-size: 1.25em;
+			}
+			&--disabled {
+				opacity: .7;
+				&:hover {
+					background: $button-light-background;
+				}
+			}
+		}
+	}
+	.categories-section {
+		h2 {
+			color: $heading-black;
+			font-weight: bold;
+			font-size: 2.5em;
+		}
+	}
+	.gynecology-section {
+		h2 {
+			color: $heading-black;
+			font-weight: bold;
+			font-size: 2.5em;
+		}
+		&__carousel-control {
+				button {
+					background: $button-light-background;
+					height: 3em;
+					width: 3em;
+					border: none;
+					border-radius: 10px;
+				}
+			}
+	}
+	.breastFeeding-section {
+		h2 {
+			color: $heading-black;
+			font-weight: bold;
+			font-size: 2.5em;
+		}
+		&__carousel-control {
+				button {
+					background: $button-light-background;
+					height: 3em;
+					width: 3em;
+					border: none;
+					border-radius: 10px;
+				}
+			}
+	}
+	.psychologist1-section {
+		h2 {
+			color: $heading-black;
+			font-weight: bold;
+			font-size: 2.5em;
+		}
+		&__carousel-control {
+				button {
+					background: $button-light-background;
+					height: 3em;
+					width: 3em;
+					border: none;
+					border-radius: 10px;
+				}
+			}
+	}
+
+
+	.main-section {
+		&__heading {
+			font-size: 2.5em;
+			font-weight: bold;
+			color: $heading-black;
+			@media (min-width: 576px) {
+				font-size: 4em;
+			}
+		}
+		&__advantages {
+			.advantages-item {
+				img {
+					padding: .4em;
+					background: $decoration-dgray;
+					border-radius: 5px;
+					@media(min-width: 576px) {
+						padding: 0;
+						background: transparent;
+						border-radius: 0;
+					}
+				}
+				span {
+					font-size: 1.25em;
+					font-weight: 300;
+					color: $text-black;
+				}
+			}
+		}
+		.m-btn {
+			padding: 1.2em 5em;
+		}
+		&__partners {
+			img {
+				width: 100%;
+			}
+		}
+	}
+	.service-for-you-section {
+		background: linear-gradient(0deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08)), linear-gradient(81.62deg, #CA5D42 -5.51%, #F39E68 67.88%);
+		&__content {
+			h2 {
+				font-size: 3em;
+				font-weight: bold;
+				color: $heading-white;
+			}
+			p {
+				font-weight: 300;
+				font-size: 1.25em;
+				line-height: 165%;
+				color: $text-white;
+			}
+			.m-btn {
+				padding: 1.2em 3em;
+			}
+		}
+		&__graphic {
+			position: relative;
+			.doctor-image {
+				display: inline-block;
+				max-width: 75%;
+				@media(min-width: 992px) {
+					max-width: 100%;
+				}
+			}
+			.about-doctor {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				background: $background-white;
+				box-shadow: 0px 10px 50px rgba(0,0,0,.05);
+				border-radius: 10px;
+				@media(min-width: 992px) {
+					left: 0;
+					right: auto;
+					top: 8rem;
+					bottom: auto;
+				}
+				&__content {
+					h5 {
+						color: $heading-black;
+						font-size: 1.25em;
+						font-weight: bold;
+					}
+					span {
+						color: $inscription-color;
+						font-size: .875em;
+						font-weight: normal;
+					}
+				}
+				&__go-link {
+					height: 2em;
+					width: 2em;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					background: $button-light-background;
+					border-radius: 5px;
+					img {
+						height: 1em;
+					}
+				}
+				&__rating {
+					border: 1px solid rgba(155, 155, 171, 0.25);
+					border-radius: 5px;
+					display: inline-block;
+					padding: .4em .8em;
+					span {
+						font-weight: bold;
+						font-size: 1.125em;
+						color: $text-brandcolor;
+					}
+					img {
+						width: 1.1em;
+					}
+				}
+			}
+			.about-consultation-time {
+				position: absolute;
+				bottom: 0;
+				left: 25%;
+				background: $background-white;
+				box-shadow: 0px 10px 50px rgba(0,0,0,.05);
+				border-radius: 10px;
+				&__inscription {
+					color: $inscription-color;
+					font-size: .875em;
+					font-weight: normal;
+				}
+				&__timer {
+					span {
+						padding: .5em 3em;
+						color: $text-brandcolor;
+						font-size: 1.125em;
+						font-weight: 500;
+						border: 1px solid rgba(155, 155, 171, 0.25);
+						border-radius: 5px;
+						display: flex;
+						align-items: center;
+					}
+					a {
+						background: $button-light-background;
+						border-radius: 5px;
+						height: 3em;
+						width: 3em;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						img {
+							height: 1.5em;
+						}
+					}
+				}
+			}
+		}
+	}
+	.service-for-women-section {
+		background: $background-light;
+		&__content {
+			h2 {
+				font-size: 3em;
+				font-weight: bold;
+				color: $heading-black;
+			}
+			p {
+				font-weight: 300;
+				font-size: 1.25em;
+				line-height: 165%;
+				color: $text-black;
+			}
+			.m-btn {
+				padding: 1.2em 3em;
+			}
+		}
+		&__graphic {
+			position: relative;
+			.doctor-image {
+				display: inline-block;
+				max-width: 75%;
+				@media(min-width: 992px) {
+					max-width: 100%;
+				}
+			}
+			.about-client {
+				position: absolute;
+				top: 0;
+				right: 0;
+				background: $background-white;
+				box-shadow: 0px 10px 50px rgba(0,0,0,.05);
+				border-radius: 10px;
+				&__content {
+					h5 {
+						color: $heading-black;
+						font-size: 1.25em;
+						font-weight: bold;
+					}
+					span {
+						color: $inscription-color;
+						font-size: .875em;
+						font-weight: normal;
+					}
+				}
+				&__go-link {
+					height: 2em;
+					width: 2em;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					background: $button-light-background;
+					border-radius: 5px;
+					img {
+						height: 1em;
+					}
+				}
+				&__diagnosis {
+					span {
+						padding: .7em 1em;
+						border-radius: 5px;
+						border: 1px solid rgba(155, 155, 171, 0.25);
+						font-size: 1em;
+						color: $inscription-color;
+					}
+				}
+			}
+			.about-consultation-session {
+				position: absolute;
+				top: 0;
+				right: 0;
+				background: $background-dark;
+				box-shadow: 0px 10px 50px rgba(0,0,0,.05);
+				border-radius: 10px;
+				@media(min-width: 992px) {
+					left: 15%;
+					right: auto;
+					bottom: 0;
+					top: auto;
+				}
+				&__heading {
+					color: $heading-white;
+					font-size: 1.25em;
+					font-weight: 500;
+				}
+				&__inscription {
+					color: $inscription-color;
+					font-size: .875em;
+					font-weight: normal;
+				}
+				&__timer {
+					span {
+						padding: .5em 3em;
+						color: $text-white;
+						font-size: 1.125em;
+						font-weight: 500;
+						border: 1px solid rgba(155, 155, 171, 0.25);
+						border-radius: 5px;
+						display: flex;
+						align-items: center;
+					}
+					a {
+						background: rgba(233, 234, 254, 0.1);
+						border-radius: 5px;
+						height: 3em;
+						width: 3em;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						img {
+							height: .8em;
+						}
+					}
+				}
+			}
+		}
+	}
+	.catalog-doctors {
+		background: linear-gradient(0deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08)), linear-gradient(108.73deg, #CA5D42 0.34%, #F39E68 87.44%);
+		&__filter {
+			.categories-carousel {
+				.Carousel-slide {
+					user-select: none;
+					font-size: 1em;
+					line-height: 125%;
+					color: $white;
+					padding: .9em 1.2em;
+					cursor: pointer;
+					border-radius: 50px;
+					border: 1px solid rgba(255,255,255,.25);
+					&.Carousel-slide-active {
+						color: $white;
+						border: 1px solid $main-color;
+						background: $main-color;
+					}
+				}
+				.butt {
+					position: relative;
+			    	cursor: pointer;
+			    	margin-bottom: 0;
+					span {
+						white-space: nowrap;
+					    display: inline-block;
+					    padding: .7em 1.2em;
+					    text-align: center;
+					    border-radius: 50px;
+					    box-shadow: 0px 0px 30px rgba(0,0,0, .03);
+					    border: 1px solid rgba(255, 255, 255, 0.3);
+					    color: $text-white;
+					}
+					input {
+						display: none;
+						&:checked + span {
+							background: $checked-input;
+							color: $text-white;
+							border: 1px solid transparent;
+							display: inline-block;
+						}
+					}
+				}
+			}
+		}
+		&__go-to-catalog {
+
+		}
+		&__main {
+			color: $text-white;
+			.doctors-carousel {
+				p {
+					opacity: 0.9;
+					line-height: 165%;
+					font-weight: 300;
+					font-size: 1.25em;
+				}
+			}
+		}
+		
+	}
+	.statistics {
+		background: $background-white;
+		&-item {
+			&__heading {
+				color: $heading-black;
+				font-weight: bold;
+				font-size: 2.25em;
+			}
+			&__description {
+				color: $inscription-color;
+				font-size: 1.125em;
+			}
+		}
+	}
+	.blog-section {
+		background: $background-light;
+		&-header {
+			&__title {
+				color: $heading-black;
+				font-weight: bold;
+				font-size: 2.5em;
+			}
+			&__carousel-control {
+				button {
+					background: $button-light-background;
+					height: 3em;
+					width: 3em;
+					border: none;
+					border-radius: 10px;
+				}
+			}
+		}
+	}
+	.reviews-section {
+		background: $background-light;
+		&-header {
+			&__title {
+				color: $heading-black;
+				font-weight: bold;
+				font-size: 2.5em;
+			}
+			&__carousel-control {
+				button {
+					background: $button-light-background;
+					height: 3em;
+					width: 3em;
+					border: none;
+					border-radius: 10px;
+				}
+			}
+		}
+	}
+	.banner-section {
+		.banner {
+			border-radius: 10px;
+			background: $medium-slate-blue;
+			overflow: hidden;
+			h2 {
+				color: $heading-white;
+				font-weight: bold;
+				font-size: 2.5em;
+				@media(min-width: 992px) {
+					font-size: 3em;
+				}
+			}
+			h3 {
+				color: $heading-white;
+				font-weight: bold;
+				font-size: 2.25em;
+			}
+			p {
+				font-size: 1.125em;
+				font-weight: 400;
+				color: $white;
+				line-height: 150%;
+			} 
+			span {
+				font-size: 1.125em;
+				font-weight: 400;
+				color: $white;
+				line-height: 150%;
+			}
+			img.banner-image {
+				position: absolute;
+				  right: 0;
+    			top: 0;
+    			&.bottom {
+    				bottom: 0;
+    				top: inherit;
+    				right: -10%;
+    				@media(min-width: 1200px) {
+    					right: 0;
+    				}
+    			}
+			}
+		}
+	}
+}

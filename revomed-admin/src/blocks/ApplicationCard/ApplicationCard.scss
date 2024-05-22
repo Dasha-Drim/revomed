@@ -1,0 +1,56 @@
+.ApplicationCard {
+	width: 100%;
+	border-radius: 10px;
+	background: #FFFFFF;
+	.avatar {
+		width: 5em;
+		height: 6.875em;
+		border-radius: 10px;
+		&.clinic {
+			height: 5em;
+		}
+	}
+	.info {
+		@media(min-width: 768px) {
+			width: 50%;
+		}
+		@media(min-width: 992px) {
+			width: auto;
+		}
+	}
+	h2 {
+		font-weight: 500;
+		font-size: 1.5em;
+		color: #272848;
+		margin-bottom: 0;
+	}
+	span {
+		font-size: .875em;
+		color: #272848;
+		&.status {
+			top: -10px;
+    		right: 5px;
+    		font-size: .75em;
+    		border-radius: 999px;
+    		color: #FFFFFF;
+    		padding: .1em 1.25em;
+    		&.accepted {
+    			background: #5BE07A;
+    		}
+    		&.blocked {
+    			background: #FF5C5C;;
+    		}
+    		&.new {
+    			background: #6D71F9;
+    		}
+		}
+	}
+	a {
+		font-size: .875em;
+		color: #6D71F9;
+		text-decoration: none;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}

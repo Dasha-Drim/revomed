@@ -1,0 +1,68 @@
+@import "../../variables.scss";
+
+.Header {
+	position: relative;
+	z-index: 99;
+	.hamburger-menu {
+		flex-basis: 33%;
+		&__button {
+			padding: 1em 1em 1em 0;
+			background: transparent;
+		}
+	}
+	&__main {
+		.logo {
+			height: 4em;
+			img {
+				height: 100%;
+			}
+		}
+		.menu {
+			a {
+				color: #EFF0F8;
+				&:hover {
+					color: $text-white;
+				}
+			}
+		}
+	}
+	&__actions {
+		flex-basis: 33%;
+		.enter {
+			a {
+				display: block;
+				font-weight: normal;
+				padding: .6em 1.5em;
+				border: 1px solid rgba(231,231,245,0.3);
+				border-radius: 50px;
+				color: #EFF0F8;
+				transition-duration: .3s;
+				&:hover {
+					text-decoration: none;
+					color: $text-white;
+				}
+			}
+		}
+		.open-notify {
+			&__button {
+				position: relative;
+				background: transparent;
+				border: 1px solid rgba(231, 231, 245, .3);
+				border-radius: 999px;
+				padding: .5em;
+				.counter {
+					display: block;
+					position: absolute;
+					top: -0.5em;
+					right: -0.5em;
+					width: 1.6em;
+					height: 1.6em;
+					background: #FF5C5C;
+					color: $text-white;
+					border-radius: 999px;
+					font-size: .8em;
+				}
+			}
+		}
+	}
+}

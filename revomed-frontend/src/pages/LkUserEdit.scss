@@ -1,0 +1,23 @@
+@import "../variables.scss";
+
+.LkUserEdit {
+	background: $background-light;
+	&__name {
+		font-weight: bold;
+		font-size: 3em;
+	}
+	.cancel-button {
+		color: $text-brandcolor;
+		background: $button-light-background;
+		padding: .8em 1.5em;
+		border-radius: 999px;
+	}
+	.edit-profile {
+		background: $background-white;
+		border-radius: 10px;
+		&__heading {
+			font-weight: 700;
+			font-size: 1.4em;
+		}
+	}
+}

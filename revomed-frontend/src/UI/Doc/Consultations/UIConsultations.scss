@@ -1,0 +1,39 @@
+@import "../../../variables.scss";
+
+.UIDocConsultations {
+	&__header {
+			color: $c-inscription-color;
+		}
+		&__carousel {
+			.UIDocConsultations-item {
+				background: linear-gradient(103.87deg, #CB5E43 -13.84%, #F39E68 100.09%);
+				border-radius: 10px;
+				color: $white;
+				&__name {
+					font-weight: 700;
+					font-size: 2em;
+				}
+				&__specialization {
+					opacity: .5;
+				}
+				&__info {
+					h4 {
+						font-weight: normal;
+						color: $white;
+						font-size: 1em;
+					}
+					span {
+						opacity: .5;
+					}
+				}
+			}
+		}
+}
+.UIDocConsultations-modal {
+	p {
+		font-weight: normal;
+		font-size: 1.125em;
+		line-height: 139%;
+		color: $c-inscription-color;
+	}
+}

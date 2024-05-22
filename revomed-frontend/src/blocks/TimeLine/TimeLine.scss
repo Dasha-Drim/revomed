@@ -1,0 +1,27 @@
+@import "../../variables.scss";
+
+.TimeLine {
+	box-shadow: 0px 20px 50px rgba(39,40,72,.03);
+	background: $background-white;
+	border-radius: 10px;
+	h2 {
+		color: $heading-black;
+		font-size: 1.5em;
+		font-weight: 500;
+		padding-bottom: .5em;
+	}
+	&__item {
+		h5 {
+			font-style: normal;
+			font-weight: 300;
+			font-size: 1em;
+			color:$heading-black;
+		}
+		span {
+			font-weight: 300;
+			font-size: .875em;
+			color: $inscription-color;
+			display: block;
+		}
+	}
+}

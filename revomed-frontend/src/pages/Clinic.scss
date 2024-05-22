@@ -1,0 +1,120 @@
+@import "../variables.scss";
+
+.Clinic {
+	background: $background-light;
+	
+	&__avatar {
+		width: 11em;
+		height: 11em;
+		border-radius: 5px;
+	}
+	&__name {
+		font-weight: 600;
+		font-size: 2.25em;
+		color: $heading-black;
+	}
+	h2 {
+		color: $heading-black;
+		font-size: 1.5em;
+		font-weight: 500;
+	}
+	.adresses-button {
+		color: $text-brandcolor;
+		background: $button-light-background;
+		padding: .8em 1.5em;
+		border-radius: 999px;
+		img {
+			height: 1.3em;
+		}
+	}
+	.indicators {
+		&__info {
+			span {
+				display: block;
+				font-weight: 300;
+				color: $inscription-color;
+				opacity: .9;
+			}
+		}
+	}
+	&__directions {
+		&-item {
+			padding: .75em 1em;
+			background: $background-white;
+			box-shadow: 0px 10px 30px rgba(0,0,0,.03);
+			border-radius: 5px;
+			color: $inscription-color;
+		}
+	}
+	.header {
+		box-shadow: 0px 20px 50px rgba(39,40,72,.03);
+		background: $background-white;
+		border-radius: 10px;
+		button {
+			background: $button-light-background;
+			height: 3em;
+			width: 3em;
+			border-radius: 10px;
+		}
+	}
+	.checkup {
+		box-shadow: 0px 20px 50px rgba(39,40,72,.03);
+		background: $background-white;
+		border-radius: 10px;
+		h3 {
+			color: $heading-black;
+			font-size: 1.5em;
+			font-weight: 500;
+			padding-bottom: .5em;
+		}
+		p {
+			white-space: pre-wrap;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 1em;
+			line-height: 169%;
+			color: $text-black;
+		}
+		span {
+			font-weight: 400;
+			font-size: 1em;
+			color: $inscription-color;
+			&.price {
+				font-weight: 500;
+				font-size: 1.125em;
+				color: #000000;
+			}
+		}
+		.surveys {
+			border: 1px solid rgba(155, 155, 171, 0.25);
+			border-radius: 5px;
+			span {
+				font-weight: 400;
+				font-size: 1em;
+				color: $text-black;
+			}
+		}
+		a {
+			padding: .75em 1em;
+			text-align: center;
+		}
+	}
+}
+
+.ClinicAdresses-modal {
+	.adresses__item {
+		&.border--true {
+			border-bottom: 1px solid rgba(155, 155, 171, 0.25);
+		}
+		.name {
+			font-weight: 400;
+font-size: 1.125em;
+color: #272848;
+		}
+		.value {
+			font-weight: 300;
+font-size: 1em;
+color: #9B9BAB;
+		}
+	}
+}

@@ -1,0 +1,29 @@
+@import "../../variables.scss";
+
+.PostCard {
+	aspect-ratio: 5/4;
+	border-radius: 10px;
+	position: relative;
+	span {
+		font-size: 1em;
+		color: $white;
+		text-transform: uppercase;
+		font-weight: 600;
+		z-index: 2
+	}
+	h3 {
+		font-size: 2.25em;
+		color: $white;
+		font-weight: 700;
+		z-index: 2
+	}
+	.shadow {
+		border-radius: 10px;
+		bottom: -10%;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+		z-index: 1
+	}
+}

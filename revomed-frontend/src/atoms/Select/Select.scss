@@ -1,0 +1,72 @@
+@import "../../variables.scss";
+
+.Select {
+	position: relative;
+	margin: 0;
+	.select-head {
+		display: block;
+		cursor: pointer;
+		background: $background-white;
+		border: 1px solid transparent;
+		border-radius: 10px;
+		color: $label-color;
+		font-size: 1em;
+		outline: 0;
+		padding: 1.5em 1em;
+		margin-top: 0;
+		transition: all 0.3s;
+		width: 100%;
+		border: 1px solid rgba(155, 155, 171, 0.3);
+		box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.03);
+		img {
+			position: absolute;
+			right: 1.5em;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+		}
+		&.open {
+			img {
+				transform: rotate(180deg);
+			}
+		}
+		&.error {
+			border: 1px solid red;
+		}
+		&.disabled {
+			opacity: .5;
+			cursor: not-allowed;
+		}
+	}
+	.select-list {
+		transition: all 0.3s;
+		    z-index: 3;
+
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background: $background-white;
+		border-radius: 10px;
+		max-height: 14em;
+		overflow-x: hidden;
+		overflow-y: auto;
+		margin-top: .5em;
+		border: 1px solid rgba(155, 155, 171, 0.1);
+		box-shadow: 0 0 4px rgba(0,0,0,.05);
+		&__item {
+			position: relative;
+			border-top: 1px solid rgba(155,155,171,.2);
+			padding: 1.5em 1em;
+			cursor: pointer;
+			list-style-type: none;
+			&:hover {
+				background: rgba(0,0,0,.05);
+			}
+			&.no-active {
+				cursor: not-allowed;
+				opacity: .4;
+			}
+		}
+	}
+}

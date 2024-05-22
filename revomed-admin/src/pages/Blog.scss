@@ -1,0 +1,13 @@
+.Blog {
+	min-height: 100%;
+	background: #EFF0F8;
+	padding-bottom: 3em;
+	@media (min-width: 768px) {
+		margin-left: 100px;
+	}
+	h1 {
+		font-weight: bold;
+		font-size: 1.75em;
+		color: #272848;
+	} 
+}

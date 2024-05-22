@@ -1,0 +1,46 @@
+.DateInput{
+	input {
+		color: rgba(39, 40, 72, 0.6);
+		font-size: .875em;
+	}
+		.MuiInputBase-input {
+			padding: 1.3em;
+		border: 1px solid rgba(39, 40, 72, 0.2);
+		border-radius: 5px;
+		}
+	.MuiInput-underline:before {
+		display: none;
+	}
+	.MuiInput-underline:after {
+		display: none;
+	}
+	.MuiInput-underline.Mui-error:after  {
+		display: none;
+	}
+	.MuiFormHelperText-root.Mui-error {
+		display: none;
+	}
+	.MuiInputAdornment-positionEnd {
+		margin-left: -50px;
+	}
+	.MuiIconButton-root {
+		outline: none;
+		cursor: pointer;
+	}
+}
+.MuiPickersDay-daySelected {
+		outline: none;
+		cursor: pointer;
+	}
+	.MuiPickersDay-day {
+		outline: none;
+		cursor: pointer;
+	} 
+	.MuiIconButton-root {
+		outline: none;
+		cursor: pointer;
+	}
+	.MuiButton-root {
+		outline: none;
+		cursor: pointer;
+	}

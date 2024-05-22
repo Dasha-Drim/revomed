@@ -1,0 +1,149 @@
+.InputPlusChecking {
+		&-group {
+			display: inline;
+			position: relative;
+			.react-datepicker-wrapper {
+				width: 100%;
+			}
+			input {
+				background: #fff;
+				border: 1px solid transparent;
+				border-radius: 5px;
+				color: #272848;
+				font-size: .875em;
+				outline: 0;
+				padding: 1.5em 1em .75em;
+				margin-top: 0;
+				transition: all 0.3s;
+				width: 100%;
+				border: 1px solid rgba(39, 40, 72, 0.2);
+				&:focus {
+					max-width: 100%;
+				}
+				&:focus+span {
+					color: rgba(39, 40, 72, 0.6);
+					font-size: .625em;
+					transform: translate(0, -4.3em)
+				}
+				&:valid+span {
+					font-size: .625em;
+					transform: translate(0, -4.3em)
+				}
+				&.error {
+					border: 1px solid red;
+				}
+			}
+			.react-datepicker__navigation {
+				overflow: inherit;
+				&-icon {
+					width: 100%;
+					top: 3px;
+					&--previous::before {
+						left: 10px;
+					}
+					&--next::before {
+						right: 10px;
+						left: auto;
+					}
+				}
+			}
+			&__label {
+				position: absolute;
+				display: block;
+				color: #272848;
+				cursor: text;
+				font-size: .875em;
+				line-height: 1em;
+				transform: translate(0, -2.4em);
+				transition: all 0.3s;
+				padding-left: 1.2em;
+				&--focused {
+					color: rgba(39, 40, 72, 0.6);
+					font-size: .625em;
+					transform: translate(0, -4.3em)
+				}
+			}
+		}
+		&-toggle {
+			@supports(-webkit-appearance: none) or (-moz-appearance: none) {
+				input[type=checkbox] {
+					--active: #6D71F9;
+					--active-inner: #fff;
+					--focus: 2px rgba(39, 94, 254, .3);
+					--border: #BBC1E1;
+					--border-hover: #6D71F9;
+					--background: #fff;
+					--disabled: #F6F8FF;
+					--disabled-inner: #E1E6F9;
+					-webkit-appearance: none;
+					-moz-appearance: none;
+					height: 21px;
+					width: 21px;
+					padding: 0;
+					margin: 0;
+					border-radius: 5px;
+					outline: none;
+					display: inline-block;
+					vertical-align: top;
+					position: relative;
+					margin: 0;
+					cursor: pointer;
+					border: 1px solid var(--bc, var(--border));
+					background: var(--b, var(--background));
+					transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+					&:after {
+						content: "";
+						display: block;
+						left: 0;
+						top: 0;
+						position: absolute;
+						transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
+						width: 19px;
+						height: 19px;
+						border-radius: 5px;
+						background: var(--active-inner);
+						transform: scale(var(--s, 0.7));
+						opacity: 0;
+					}
+					&:checked {
+						--b: var(--active);
+						--bc: var(--active);
+						--d-o: .3s;
+						--d-t: .6s;
+						--d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+						--s: .5;
+						&:after {
+							opacity: 1;
+						}
+					}
+					&:focus {
+						box-shadow: 0 0 0 var(--focus);
+					}
+					&:hover:not(:checked):not(:disabled) {
+						--bc: var(--border-hover);
+					}
+					&:disabled {
+						--b: var(--disabled);
+						cursor: not-allowed;
+						opacity: 0.9;
+						&:checked {
+							--b: var(--disabled-inner);
+							--bc: var(--border);
+						}
+						& + label {
+							cursor: not-allowed;
+						}
+					}
+				}
+			}
+		}
+		&-plus {
+			img {
+				cursor: pointer;
+				&.cross {
+					transform: rotate(45deg);
+				}
+			}
+		}
+		
+	}

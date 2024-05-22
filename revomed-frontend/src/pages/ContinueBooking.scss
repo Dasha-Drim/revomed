@@ -1,0 +1,9 @@
+@import "../variables.scss";
+.ContinueBooking {
+	background: $background-light;
+	h1 {
+		font-weight: bold;
+		font-size: 3em;
+		color: $very-dark-desaturated-blue;
+	}
+}

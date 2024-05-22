@@ -1,0 +1,146 @@
+@import "../variables.scss";
+
+.LkClinic {
+	background: $background-light;
+	&__name {
+		font-weight: bold;
+		font-size: 3em;
+	}
+	.edit-button {
+		color: $text-brandcolor;
+		background: $button-light-background;
+		padding: .8em 1.5em;
+		border-radius: 999px;
+		img {
+			height: 1.3em;
+		}
+	}
+	.exit {
+		.ui-secondary-button {
+			background: $button-light-background;
+			color: $text-brandcolor;
+		}
+	}
+	.LkClinic_offline-btns {
+		background: $background-white;
+		border-radius: 10px;
+		span {
+			font-size: 1em;
+			color: #9B9BAB;
+			.prompt {
+				width: 20px;
+				height: 20px;
+				background: #E9EAFE;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 99px;
+				cursor: pointer;
+				position: relative;
+				z-index: 2;
+				.prompt__info {
+					background: $background-white;
+					width: 20.875rem;
+					top: 2rem;
+					box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+					margin-left: auto;
+					margin-right: auto;
+					border-radius: 10px;
+					p {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+		.offline-btns__container {
+			display: flex;
+			button {
+				width: 13.25em;
+				height: 3.125em;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.03);
+				border: 1px solid #E9EAFE;
+				border-radius: 10px;
+				background: transparent;
+				font-size: 1em;
+				color: #9B9BAB;
+				&.active {
+					background: #E9EAFE;
+					color: #6D71F9;
+				}
+				&:first-child {
+					border-radius: 10px 0px 0px 10px;
+				}
+				&:last-child {
+					border-radius: 0px 10px 10px 0px;
+				}
+			}
+
+		}
+	}
+	.modules {
+		.modules-heading {
+			color: #272848;
+			font-weight: 700;
+			font-size: 1.8em;
+		}
+		.modules-item {
+			background: $background-white;
+			border-radius: 10px;
+			p {
+				color: $inscription-color;
+			}
+			h3 {
+				font-weight: 500;
+				font-size: 1.125em;
+				color: #000000;
+			}
+			a {
+				color: $text-brandcolor;
+				background: $button-light-background;
+				padding: .8em 1.5em;
+				border-radius: 999px;
+				display: flex;
+				justify-content: center;
+			}
+		}
+	}
+}
+
+.LkClinicAddDoctor-overlay {
+	.LkClinicAddDoctor-modal {
+		.copy-input-holder {
+			position: relative;
+			&__input {
+				width: 100%;
+				background: $background-light;
+				color: $text-brandcolor;
+				border-radius: 10px;
+				padding: 1.5em 2em 1.5em;
+			}
+			&__success-message {
+				position: absolute;
+				padding: .8em 1.2em;
+				top: 0;
+				right: 0;
+			}
+			&__button {
+				position: absolute;
+				background: $background-light;
+				right: 1.5em;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				height: 1.5em;
+				width: 1.5em;
+				img {
+					height: inherit;
+					width: inherit;
+				}
+			}
+		}
+	}
+
+}

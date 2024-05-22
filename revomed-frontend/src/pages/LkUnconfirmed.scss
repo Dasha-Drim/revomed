@@ -1,0 +1,23 @@
+@import "../variables.scss";
+
+.LkUnconfirmed {
+	background: $background-light;
+	.unconfirmed-info {
+		border-radius: 10px;
+		background: $background-white;
+		h1 {
+			font-size: 1.8em;
+			font-weight: 700;
+			color: $heading-black;
+		}
+		p {
+			color: $text-black;
+		}
+	}
+	.exit {
+		.ui-secondary-button {
+			background: $button-light-background;
+			color: $text-brandcolor;
+		}
+	}
+}

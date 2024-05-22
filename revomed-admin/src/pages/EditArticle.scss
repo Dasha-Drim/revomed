@@ -1,0 +1,91 @@
+.EditArticle {
+	min-height: 100%;
+	background: #EFF0F8;
+	padding-bottom: 3em;
+	@media (min-width: 768px) {
+		margin-left: 100px;
+	}
+	.photo {
+		width: 100%;
+		height: 20em;
+		border-radius: 10px;
+		display: flex;
+		cursor: pointer;
+		background-color: #C2C3DA;
+		.file-input {
+			position: absolute;
+			z-index: -1;
+			opacity: 0;
+		}
+		.file-input+img {
+			display: inline-flex;
+			align-items: center;
+			user-select: none;
+			cursor: pointer;
+		}
+	}
+	h1 {
+		font-weight: bold;
+		font-size: 1.75em;
+		color: #272848;
+	}
+	h2 {
+		font-weight: 500;
+		font-size: 1.125em;
+		color: #272848;
+		margin-bottom: 0;
+	}
+	h3 {
+		font-weight: 400;
+		font-size: 1.125em;
+		color: #272848;
+	}
+	form {
+		background: #fff;
+		border-radius: 10px;
+		padding-left: 2em;
+		padding-right: 2em;
+		@media (min-width: 1200px) {
+			padding-left: 8em;
+			padding-right: 8em;
+		}
+		.codex-editor {
+			padding: 2em;
+			border: 1px solid rgba(39, 40, 72, 0.2);;
+			border-radius: 5px;
+		}
+		.ce-block__content {
+			width: 100%;
+			    max-width: none;
+		}
+		.codex-editor__redactor {
+			padding: 0 !important;
+		}
+		.image-tool__image-picture {
+           width: 100%;
+                @media(min-width: 992px) {
+                    width: 50%;
+                }
+        }
+            .image-tool__caption {
+                width: 100%;
+                @media(min-width: 992px) {
+                    width: 50%;
+                }
+            }
+		.select_status {
+			width: 100%;
+			@media(min-width: 992px) {
+				width: 20%;
+			}
+			.select-list {
+				max-height: 7em;
+			}
+		}
+		.status {
+			textarea {
+				height: 6em;
+			}
+		}
+	}
+}

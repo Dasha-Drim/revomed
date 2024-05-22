@@ -1,0 +1,114 @@
+@import "../../../variables.scss";
+
+.UIDocConsultations {
+	&__header {
+		color: $inscription-color;
+	}
+	&__carousel {
+		.UIDocConsultations-item {
+			background: linear-gradient(103.87deg, #CB5E43 -13.84%, #F39E68 100.09%);
+			border-radius: 10px;
+			color: $text-white;
+			&__name {
+				font-weight: 700;
+				font-size: 2em;
+			}
+			&__specialization {
+				opacity: .5;
+			}
+			&__info {
+				h4 {
+					font-weight: normal;
+					color: $heading-white;
+					font-size: 1em;
+				}
+				span {
+					opacity: .5;
+				}
+			}
+			.UIDocConsultations__timezone {
+				opacity: .5;
+			}
+		}
+	}
+	.info_offline {
+		background: rgba(0, 0, 0, 0.15);
+		border-radius: 10px 10px 0 0;
+		span {
+			font-size: 1em;
+			color: $text-white;
+			img {
+				width: 1.5em;
+				height: 1.5em;
+			}
+		}
+	}
+}
+.UIDocConsultations-overlay {
+	overflow-y: scroll;
+	.ContentModal__Content  .ContentModal_wrapper {
+		height: auto;
+		padding: 3em 0;
+		.ContentModal {
+			border-radius: 10px;
+		}
+	}
+	.UIDocConsultations-modal {
+		p {
+			font-weight: normal;
+			font-size: 1.125em;
+			line-height: 139%;
+			color: $inscription-color;
+		}
+		.files-attached-carousel {
+			&__secondary {
+				position: relative;
+				.Carousel-slide {
+					user-select: none;
+					font-size: 1em;
+					line-height: 125%;
+					color: $inscription-color;
+					padding: .7em;
+					border: 1px solid transparent;
+					width: auto!important;
+					cursor: pointer;
+					&.Carousel-slide-active {
+						color: $text-brandcolor;
+						background: $button-light-background;
+						border-radius: 50px;
+					}
+				}
+				.Carousel-button-next {
+					position: absolute;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					width: 1em;
+					z-index: 2;
+					box-sizing: content-box;
+					padding: .5em;
+					background: $background-white;
+					cursor: pointer;
+					display: flex;
+					align-items: center;
+					align-content: center;
+					img {
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+			&__primary {
+				.swiper-slide {
+					.slide-item {
+						user-select: none;
+						iframe {
+							background: $background-light;
+							min-height: 20em;
+						}
+					}
+				}
+			}
+		}
+	}
+}

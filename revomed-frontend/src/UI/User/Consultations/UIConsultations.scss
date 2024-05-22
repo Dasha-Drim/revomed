@@ -1,0 +1,56 @@
+@import "../../../variables.scss";
+
+.UIConsultations {
+	&__header {
+			color: $c-inscription-color;
+		}
+		&__carousel {
+			.UIConsultations-item {
+				background: linear-gradient(103.87deg, #CB5E43 -13.84%, #F39E68 100.09%);
+				border-radius: 10px;
+				margin-top: 9em;
+				padding-top: 4em;
+				color: $white;
+				&__avatar {
+					width: 8.94em;
+					height: 13em;
+					object-fit: cover;
+					border-radius: 10px;
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					margin: auto;
+					@media (min-width: 992px) {
+						position: static;
+						margin: 0;
+					}
+				}
+				&__name {
+					font-weight: 700;
+					font-size: 2em;
+				}
+				&__specialization {
+					opacity: .5;
+				}
+				&__info {
+					h4 {
+						font-weight: normal;
+						color: $white;
+						font-size: 1em;
+					}
+					span {
+						opacity: .5;
+					}
+				}
+			}
+		}
+}
+.UIConsultations-modal {
+	p {
+		font-weight: normal;
+		font-size: 1.125em;
+		line-height: 139%;
+		color: $c-inscription-color;
+	}
+}

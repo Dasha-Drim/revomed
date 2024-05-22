@@ -1,0 +1,17 @@
+@import "../../variables.scss";
+
+.Rating {
+	background: $background-white;
+	border-radius: 5px;
+	box-shadow: 0px 10px 30px rgba(0,0,0,.03);
+	img {
+		height: 1.75em;
+		width: 1.75em;
+	}
+	span {
+		font-weight: bold;
+		font-size: 1.5em;
+		color: $text-brandcolor;
+		opacity: .9;
+	}
+}

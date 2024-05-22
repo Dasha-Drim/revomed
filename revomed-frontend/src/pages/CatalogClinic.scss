@@ -1,0 +1,42 @@
+@import "../variables.scss";
+
+.CatalogClinic {
+	background: $background-light;
+	.search-section {
+		background: $medium-slate-blue;
+		&.active {
+			height: 100%;
+				position: absolute;
+				z-index: 3;
+				width: 100%;
+			@media(min-width: 576px) {
+				position: relative;
+				height: auto;
+				width: auto;
+			}
+			
+			.search-section__heading {
+				display: none;
+				@media(min-width: 576px) {
+				display: block;
+				}
+			}
+
+			.back-btn {
+				display: none!important;
+				@media(min-width: 576px) {
+				display: inline-flex!important;
+				}
+			}
+			
+		}
+		&__heading {
+			font-size: 2.5em;
+			font-weight: bold;
+			color: $white;
+			@media (min-width: 576px) {
+				font-size: 3em;
+			}
+		}
+	}
+}

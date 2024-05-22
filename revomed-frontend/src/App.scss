@@ -1,0 +1,36 @@
+@import "./variables.scss";
+@import "./utils/bootstrap.min.css";
+
+html, .App {
+	background: $background-light;
+}
+
+html, body, #root, .App {
+	height: 100%;
+}
+
+.main-loader {
+	position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 30px;
+      height: 30px;
+      margin-top: -15px;
+      margin-left: -15px;
+      border-radius: 50%;
+      border: 2px solid $border-brandcolor;
+      border-top-color: transparent;
+      box-sizing: border-box;
+      animation: editor-loader-spin 800ms infinite linear;
+      will-change: transform;
+}
+
+@keyframes editor-loader-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

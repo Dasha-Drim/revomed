@@ -1,0 +1,21 @@
+@import "../../../variables.scss";
+
+.UIReviews {
+	&__carousel {
+		.UIReviews-item {
+			background: $background-white;
+			border-radius: 10px;
+			&__name {
+				font-weight: 500;
+				font-size: 1.2em;
+				color: $heading-black;
+			}
+			&__text {
+				color: $text-black;
+			}
+			&__date {
+				color: $inscription-color;
+			}
+		}
+	}
+}

@@ -1,0 +1,40 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+<form>
+	<input type="text" name="login" placeholder="login">
+	<input type="text" name="password" placeholder="password">
+	<input type="submit" class="addAdmin">
+</form>
+
+<script>
+	document.querySelector('form').onsubmit = function(e){
+		e.preventDefault();
+		let dataAdmin = {
+			login: document.querySelector('[name="login"]').value,
+			password: document.querySelector('[name="password"]').value
+		};
+		console.log(dataAdmin)
+		fetch('/reg/admins', {
+			method: 'POST',
+			credentials: 'include',
+			headers: {
+				'Content-Type': 'application/json;charset=utf-8'
+			},
+			body: JSON.stringify(dataAdmin),
+		}).then( 
+		response => response.json()
+		).then(
+		success => {
+			console.log("success", success);
+		}).catch(
+		error => {
+		});
+	}
+
+
+
+
+
+
+</script>

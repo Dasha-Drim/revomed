@@ -1,0 +1,87 @@
+@import "../../../variables.scss";
+
+.UIConsultationTimer {
+	&__content {
+		background: $background-white;
+		border-radius: 10px;
+		.date {
+			color: $inscription-color;
+			font-weight: 300;
+			text-transform: lowercase;
+		}
+		.green-color {
+			color: #5BE07A;
+			position: relative;
+			padding-left: 12px;
+			&::after {
+				content: "";
+				position: absolute;
+				width: 6px;
+				height: 6px;
+				border-radius: 999px;
+				background: #5BE07A;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				margin: auto;
+			}
+		}
+		.red-color {
+			color: red;
+			position: relative;
+			padding-left: 12px;
+			&::after {
+				content: "";
+				position: absolute;
+				width: 6px;
+				height: 6px;
+				border-radius: 999px;
+				background: red;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				margin: auto;
+			}
+		}
+		.frame {
+			border: 1px solid #E2E3FE;
+			margin-top: .5em;
+			border-radius: 5px;
+			padding: 1.5rem;
+			&.start {
+				padding: 1.37rem;
+			}
+			.time {
+				color: $text-black;
+				opacity: 0.7;
+				font-weight: 500;
+			}
+			.before-start {
+				color: #F96D6D;
+			}
+			.before-end {
+				.time {
+					z-index: 99;
+					img {
+						height: 1.25em;
+						margin-right: .5em;
+					}
+					.before-end-time {
+						font-size: 1.25em;
+						color: $text-black;
+						opacity: 0.5;
+					}
+				}
+				.progress {
+					top: -1px;
+					left: 0;
+					height: 103%;
+					width: 100%;
+					background: #E7E7F5;
+					z-index: 0;
+					border-radius: 5px 0 0 5px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,87 @@
+@import "../../variables.scss";
+
+.SelectMini {
+	position: relative;
+	margin: 0;
+	.select-head {
+		display: block;
+		cursor: pointer;
+		background: $background-white;
+		color: $label-color;
+		font-size: 1em;
+		outline: 0;
+		padding: .7em 1.2em .7em 1.2em;
+		margin-top: 0;
+		transition: all 0.3s;
+		width: 100%;
+		border-radius: 50px;
+    	border: 1px solid rgba(155, 155, 171, 0.3);
+    	&.has-chevron {
+    		padding-right: 2.4em;
+    	}
+    	&.has-icon {
+    		padding-left: 3em;
+    	}
+    	img.icon {
+    		position: absolute;
+			left: 1em;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			width: 2.4em;
+    	}
+		img.chevron {
+			position: absolute;
+			right: 1em;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			width: .8em;
+		}
+		&.open {
+			img.chevron {
+				transform: rotate(180deg);
+			}
+		}
+		&.error {
+			border: 1px solid red;
+		}
+		&.disabled {
+			opacity: .5;
+			cursor: not-allowed;
+		}
+	}
+}
+.ReactSelectMiniPortal {
+	.select-list {
+		transition: all 0.3s;
+		z-index: 10;
+		position: absolute;
+		background: $background-white;
+		border-radius: 10px;
+		max-height: 14em;
+		overflow-x: hidden;
+		overflow-y: auto;
+		margin-top: .5em;
+		min-width: 15em;
+		border: 1px solid rgba(155, 155, 171, 0.2);
+		box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.03);
+		&__item {
+			position: relative;
+			border-top: 1px solid rgba(155,155,171,.2);
+			padding: .7em 1em;
+			cursor: pointer;
+			list-style-type: none;
+			&:first-of-type {
+				border-top: none;
+			}
+			&:hover {
+				background: rgba(0,0,0,.05);
+			}
+			&.no-active {
+				cursor: not-allowed;
+				opacity: .4;
+			}
+		}
+	}
+}

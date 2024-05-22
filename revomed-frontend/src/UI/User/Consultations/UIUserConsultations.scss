@@ -1,0 +1,83 @@
+@import "../../../variables.scss";
+
+.UIUserConsultations {
+	&__header {
+		color: $inscription-color;
+	}
+	&__carousel {
+		.UIUserConsultations-item {
+			background: linear-gradient(103.87deg, #CB5E43 -13.84%, #F39E68 100.09%);
+			border-radius: 10px;
+			color: $text-white;
+			.info {
+				margin-top: 9em;
+				padding-top: 4em;
+			}
+			&__avatar {
+				width: 8.94em;
+				height: 13em;
+				object-fit: cover;
+				border-radius: 10px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				margin: auto;
+				@media (min-width: 992px) {
+					position: static;
+					margin: 0;
+				}
+			}
+			&__name {
+				font-weight: 700;
+				font-size: 2em;
+			}
+			&__specialization {
+				opacity: .5;
+			}
+			&__info {
+				h4 {
+					font-weight: normal;
+					color: $heading-white;
+					font-size: 1em;
+				}
+				span {
+					opacity: .5;
+				}
+			}
+			.info_offline {
+				background: rgba(0, 0, 0, 0.15);
+				border-radius: 10px;
+				@media(min-width: 992px) {
+					border-radius: 10px 10px 0 0;
+				}
+				.clinicName {
+					font-size: 1em;
+					color: $text-white;
+				}
+				.adress {
+					font-size: .875em;
+					line-height: 1em;
+					color: $text-white;
+					opacity: 0.4;
+				}
+			}
+		}
+	}
+}
+.UIUserConsultations-modal {
+	p {
+		font-weight: normal;
+		font-size: 1.125em;
+		line-height: 139%;
+		color: $inscription-color;
+	}
+	button.button-upload-another-files {
+		background: transparent;
+		border: 0;
+		color: $link-color;
+		&:hover {
+			color: $link-hover;
+		}
+	}
+}
